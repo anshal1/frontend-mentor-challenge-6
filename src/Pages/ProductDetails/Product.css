@@ -1,0 +1,220 @@
+/* For mobiles less than 749px screen size */
+@media only screen and (width < 749px) {
+    .main_product_container{
+        width: 100%;
+        height: fit-content;
+        padding: 1.5rem 2.5rem;
+    }
+    .company{
+        margin-bottom: 1rem;
+    }
+    .company p{
+        text-transform: uppercase;
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: hsl(26, 100%, 55%);
+    }
+    .product_name{
+        margin-bottom: 1rem;
+    }
+    .product_name h1{
+        font-size: 3rem;
+        word-break: normal;
+        font-weight: 700;
+        color: hsl(220, 13%, 13%);
+    }
+    .description{
+        margin-bottom: 1rem;
+    }
+    .description p{
+        font-size: 1.5rem;
+        color: hsl(220, 14%, 75%);
+        font-weight: 500;
+        line-height: 2rem;
+    }
+    .price{
+        display: flex;
+        align-items: center;
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+    .price_tag p{
+        font-size: 2.5rem;
+        font-weight: 700;
+        color: hsl(220, 13%, 13%);
+    }
+    .offer_tag p{
+        padding: .8rem;
+        border-radius: 8px;
+        font-size: 1.3rem;
+        margin-left: 1rem;
+        font-weight: 700;
+        color: hsl(26, 100%, 55%);
+        background-color: hsl(25, 100%, 94%);
+    }
+    .original_price{
+        width: 100%;
+        text-align: end;
+        font-size: 1.3rem;
+        color: hsl(220, 14%, 75%);
+        font-weight: 700;
+        text-decoration: line-through;
+    }
+    .product_count{
+        width: 100%;
+        height: 5.5rem;
+        background-color: hsl(223, 64%, 98%);
+        border-radius: 8px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0px 2rem;
+        margin-bottom: 1rem;
+    }
+    .product_count  img{
+        width: 1.5rem;
+    }
+    .number{
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: hsl(220, 13%, 13%);
+    }
+    .btn{
+        margin-bottom: 1rem;
+    }
+    .btn button{
+        width: 100%;
+        height: 5rem;
+        border: none;
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: white;
+        background-color: hsl(26, 100%, 55%);
+        border-radius: 8px;
+        box-shadow: 0px 5px 10px 0px hsl(25, 100%, 94%);
+    }
+}
+/* For mobiles less than 749px screen size end here */
+
+/* For devices greater than 749px */
+@media only screen and (width >= 749px) {
+    .main_product_container{
+        width: 40%;
+        height: fit-content;
+        padding: 1.5rem 2.5rem;
+    }
+    .company{
+        margin-bottom: 1rem;
+    }
+    .company p{
+        text-transform: uppercase;
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: hsl(26, 100%, 55%);
+    }
+    .product_name{
+        margin-bottom: 2rem;
+    }
+    .product_name h1{
+        font-size: 4rem;
+        word-break: normal;
+        font-weight: 700;
+        color: hsl(220, 13%, 13%);
+    }
+    .description{
+        margin-bottom: 1.5rem;
+    }
+    .description p{
+        font-size: 1.6rem;
+        color: hsl(220, 14%, 75%);
+        font-weight: 500;
+        line-height: 2rem;
+    }
+    .price{
+        display: flex;
+        align-items: center;
+        width: 100%;
+        margin-bottom: 2rem;
+        position: relative;
+    }
+    .price_tag p{
+        font-size: 2.5rem;
+        font-weight: 700;
+        color: hsl(220, 13%, 13%);
+    }
+    .offer_tag p{
+        padding: .8rem;
+        border-radius: 8px;
+        font-size: 1.3rem;
+        margin-left: 1rem;
+        font-weight: 700;
+        color: hsl(26, 100%, 55%);
+        background-color: hsl(25, 100%, 94%);
+    }
+    .original_price{
+        position: absolute;
+        bottom: -25px;
+        font-size: 1.3rem;
+        color: hsl(220, 14%, 75%);
+        font-weight: 700;
+        text-decoration: line-through;
+    }
+    .product_count{
+        display: inline-flex;
+        width: 40%;
+        height: 5.5rem;
+        background-color: hsl(223, 64%, 98%);
+        border-radius: 8px;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0px 2rem;
+        margin-top: 4rem;
+        margin-right: 1rem;
+    }
+    .product_count  img{
+        width: 1.5rem;
+    }
+    .number{
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: hsl(220, 13%, 13%);
+    }
+    .btn{
+        width: 50%;
+        margin-bottom: 1rem;
+        display: inline-block;
+    }
+    .btn button{
+        width: 100%;
+        height: 5rem;
+        border: none;
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: white;
+        background-color: hsl(26, 100%, 55%);
+        border-radius: 8px;
+        box-shadow: 0px 5px 10px 0px hsl(25, 100%, 94%);
+        transition: all 200ms;
+    }
+    .btn button:hover{
+        background-color: rgba(255, 125, 26, .7);
+        cursor: pointer;
+        box-shadow: 0px 5px 12px 6px rgba(255, 125, 26, .3);
+    }
+    .minus > img{
+        transition: all 200ms;
+        cursor: pointer;
+    }
+    .minus >img:hover{
+        filter: brightness(125%);
+    }
+    .plus > img{
+        transition: all 200ms;
+        cursor: pointer;
+    }
+    .plus >img:hover{
+        filter: brightness(125%);
+    }
+
+}
+/* For devices greater than 749px end */

@@ -1,0 +1,183 @@
+/* For mobile and less than 749px devices sizes */
+@media only screen and (width < 749px) {
+  .main_carousel_container {
+    width: 100%;
+    height: 30em;
+    position: relative;
+    margin-top: 1.5rem;
+  }
+  .btns {
+    position: absolute;
+    z-index: 100;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    margin: auto;
+    width: 100%;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    justify-content: space-between;
+    padding: 0px 10px;
+  }
+  .btns > img {
+    width: 49px;
+    height: 49px;
+    padding: 15px;
+    text-align: center;
+    background-color: white;
+    border-radius: 50%;
+  }
+  .product_img {
+    width: 100%;
+    margin: auto;
+    height: 100%;
+    overflow: scroll;
+    scroll-behavior: smooth;
+    /* pointer-events: none; */
+  }
+  .img_holder {
+    width: fit-content;
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+  .img_holder img{
+    display: block;
+    width: 38rem;
+    height: 100%;
+    object-fit: cover;
+  }
+  .products_img {
+    width: 100%;
+    position: absolute;
+    height: 100%;
+    z-index: 1;
+    opacity: 1;
+    object-fit: cover;
+    object-position: center;
+    transition: all 300ms;
+  }
+  .product_img_hide {
+    z-index: -1;
+    width: 100%;
+    position: absolute;
+    height: 100%;
+    opacity: 0;
+    object-fit: cover;
+    object-position: center;
+    transition: all 300ms;
+  }
+  .desktop_carousel{
+    display: none;
+  }
+  .product_gallery{
+    display: none;
+  }
+}
+/* For mobile and less than 749px devices sizes end */
+
+/* For devices greater than 749px */
+@media only screen and (width >= 749px) {
+  .main_carousel_container {
+    width: 40rem;
+    height: fit-content;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+  }
+  .btns {
+    position: absolute;
+    z-index: 100;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    margin: auto;
+    width: 100%;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    justify-content: space-between;
+    padding: 0px 10px;
+    display: none;
+  }
+  .btns > img {
+    width: 49px;
+    height: 49px;
+    padding: 15px;
+    text-align: center;
+    background-color: white;
+    border-radius: 50%;
+  }
+  .product_img {
+    width: 100%;
+    height: 100%;
+    display: none;
+  }
+  .img_holder {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .products_img {
+    width: 100%;
+    position: absolute;
+    height: 100%;
+    z-index: 1;
+    opacity: 1;
+    object-fit: cover;
+    object-position: center;
+    transition: all 300ms;
+  }
+  .product_img_hide {
+    z-index: -1;
+    width: 100%;
+    position: absolute;
+    height: 100%;
+    opacity: 0;
+    object-fit: cover;
+    object-position: center;
+    transition: all 300ms;
+  }
+  .desktop_carousel{
+    width: 100%;
+    height: 100%;
+  }
+  .desktop_carousel img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  .product_gallery{
+    width: 100%;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.4rem;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+  }
+  .product_gallery img{
+    display: block;
+    width: 7rem;
+    height: 7rem;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  .product_gallery img:hover{
+    filter: opacity(.7);
+  }
+  .active_img{
+    filter: opacity(.7);
+    border:  2px solid hsl(26, 100%, 55%);
+  }
+}
+/* For devices greater than 749px end */
